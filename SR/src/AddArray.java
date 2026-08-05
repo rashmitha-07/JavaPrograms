@@ -17,6 +17,7 @@ public class AddArray {
         	sum+=c;
         }
         System.out.println("\nSum of array elements: "+sum);
+        sc.close();
 	}
 
 }

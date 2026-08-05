@@ -4,7 +4,7 @@ public class Price {
 		Scanner sc=new Scanner(System.in);
 		int option,itemNumber,quantity;
 		double rate,prize;
-		string itemName;
+		String itemName;
 		do {
 			System.out.println("Enter Item Number");
 			itemNumber=sc.nextInt();
@@ -14,15 +14,15 @@ public class Price {
 			System.out.println("Enter Rate");
 			rate=sc.nextDouble();
 			System.out.println("Enter Quantity");
-			quantity=sc.nextInt();{
-			price=rate*quantity;
-			System.out.println("Item number:"+itemNumber+" Name: "+itemName+" Rate: "+rate+");
-			System.out,println("Enter option");
+			quantity=sc.nextInt();
+			prize=rate*quantity;
+			System.out.println("Item number:"+itemNumber+" Name: "+itemName+" Rate: "+rate);
+			System.out.println("Enter option");
 			option=sc.nextInt();
 		}while(option!=1);
 		System.out.println("Thank you!!");
 		
-	}
 
-}
-}
+
+		}
+	}
