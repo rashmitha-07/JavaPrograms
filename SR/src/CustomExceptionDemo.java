@@ -1,0 +1,43 @@
+class AgeException extends Exception {
+
+    AgeException(String msg) {
+        super(msg);
+    }
+
+    AgeException() {
+    }
+}   
+
+class Customer1 {
+
+    void setAge(int age) throws AgeException {
+
+        if (age < 18 || age > 60)
+            throw new AgeException("Age should be between 18 and 60");
+        else
+            System.out.println("Your Age : " + age);
+    }
+}
+
+
+public class CustomExceptionDemo {
+
+    public static void main(String[] args) {
+
+        Customer1 c = new Customer1();
+
+        try {
+        	int age = Integer.parseInt(args[0]);
+            c.setAge(age);
+        }
+        catch (AgeException e) {
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
+    }
+}
+
+
+	
+
+
